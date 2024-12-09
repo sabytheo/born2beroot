@@ -1,0 +1,58 @@
+Q : Why did I choose Debian?
+
+plus facile a utiliser pour une utilisation perso, Rocky pour les pro. Fcilite de mise a jour,et supporte plus de bibliotheque.
+
+Q : basic function of virtual machine
+
+Simule un materiel virtuel
+
+
+If the chosen operating system is Debian, they must explain the difference between aptitude and apt, and what APPArmor is. During the defense, a script must display information every 10 minutes. Its operation will be checked in detail later. If the explanations are not clear, the evaluation stops here.
+
+
+Quelle est la différence entre aptitude et APT (Advanced Packaging Tool) ?
+
+Aptitude : Gestionnaire de paquets haut niveau, plus intelligent, qui supprime automatiquement les paquets inutilisés et suggère l’installation des dépendances.
+
+APT : Gestionnaire de paquets de bas niveau, exécutant uniquement ce qui lui est explicitement demandé via la ligne de commande.
+
+Qu'est-ce qu'AppArmor ?
+
+Système de sécurité Linux offrant un contrôle d'accès obligatoire (MAC). Il permet à l’administrateur système de restreindre les actions qu’un processus peut effectuer. AppArmor est inclus par défaut avec Debian. Pour vérifier s’il est actif : aa-status.
+
+
+
+sudo nano /etc/login.defs  // DELAI DELAI DE PASS
+sudo nano /etc/pam.d/common-password // REGLE DE CREATION
+
+sudo ufw status
+sudo systemctl status ssh
+groups tsaby
+sudo adduser
+sudo groupadd
+sudo usermod -aG evaluating
+sudo chage -l nom_utilisateur    # Vérifier les règles d’expiration du mot de passe
+
+
+hostnamectl
+sudo hostnamectl newuser.
+sudo systemctl status ssh
+
+sudo visudo
+crontab -e
+
+Monitoring .
+
+1. Récupérer les informations de base
+2. Nombre de processeurs physiques
+3. Nombre de processeurs virtuels
+4. Mémoire totale et utilisée
+5. Espace disque total et utilisé
+6. Charge CPU
+7. Date du dernier démarrage
+8. Utilisation de LVM
+9. Connexions TCP actives
+10. Nombre d’utilisateurs connectés
+11. Adresse IP et MAC
+12. Nombre de commandes sudo utilisées
+13. Affichage des résultats avec wall
