@@ -35,11 +35,11 @@ sudo chage -l nom_utilisateur    # Vérifier les règles d’expiration du mot d
 
 
 hostnamectl
-sudo hostnamectl newuser.
+sudo hostnamectl set-hostname fdsdf
 sudo systemctl status ssh
 
 sudo visudo
-crontab -e
+sudo crontab -e
 
 Monitoring .
 
